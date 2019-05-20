@@ -12,6 +12,7 @@
         <%= image_tag @destination.image %>
         <h2><%= @destination.name %></h2>
         <%= link_to 'See more', destination_path(@destination) %>
+        <%= link_to 'Edit', edit_destination_path(@destination) %>
       </div>
     </div>
   </div>

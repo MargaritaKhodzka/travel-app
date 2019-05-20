@@ -1,2 +1,18 @@
-<h1>Destinations#show</h1>
-<p>Find me in app/views/destinations/show.html.erb</p>
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= image_tag @destination.image %>
+        <h2><%= @destination.name %></h2>
+        <%= link_to 'See more', destination_path(@destination) %>
+      </div>
+    </div>
+  </div>
+</div>
